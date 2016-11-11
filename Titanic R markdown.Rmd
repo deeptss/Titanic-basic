@@ -1,0 +1,42 @@
+---
+title: "Titanic"
+author: "deepthi"
+date: "November 11, 2016"
+output: html_document
+---
+
+
+## R Markdown
+
+This is an R Markdown document.In this exercise, you'll work with one of the most popular starter data sets in data science, the Titanic data set. This is a data set that records various attributes of passengers on the Titanic, including who survived and who didn't.
+
+
+Summary of the data 
+```{r}
+summary(titanic)
+```
+## Total number of survivors 
+
+Total number of survivors in Titanic:
+
+```{r }
+sum(titanic$survived, na.rm = TRUE)
+```
+
+
+Total number of passengers 
+Female : 
+```{r}
+length(titanic$sex[titanic1$sex == "female"])
+```
+Male:
+```{r}
+length(titanic$sex[titanic1$sex == "male"])
+```
+
+Distribution of passengers 
+
+```{r}
+ ggplot(titanic, aes(x = sex)) + geom_bar()
+```
+
